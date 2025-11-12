@@ -15,7 +15,7 @@ export async function POST(req: NextRequest) {
 
     // Run the prompt to extract claims along with original text parts
     const { text } = await generateText({
-      model: anthropic('claude-3-5-sonnet-20241022'),
+      model: anthropic('claude-3-7-sonnet-latest'),
       prompt: 
       `You are an expert at extracting claims from text.
       Your task is to identify and list all claims present, true or false, in the given text. Each claim should be a verifiable statement.
